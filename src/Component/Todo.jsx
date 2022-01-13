@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo } from "../features/Todo/action";
+import { addTodo } from "../features/Todos/action";
 const axios = require('axios');
 
 export const Todo = () => {
@@ -15,16 +15,16 @@ export const Todo = () => {
          placeholder="Enter Tasks" />
       <button
        onClick={()=>{
-        axios.post('http://localhost:3001/todos', {
-          status:false ,
-          title: text
-        })
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
+        // axios.post('http://localhost:3001/todos', {
+        //   status:false ,
+        //   title: text
+        // })
+        // .then(function (response) {
+        //   console.log(response.data);
+        // })
+        // .catch(function (error) {
+        //   console.log(error);
+        // });
 
 
 
